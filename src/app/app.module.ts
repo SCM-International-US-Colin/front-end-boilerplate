@@ -1,13 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {HttpClientModule} from '@angular/common/http';
 import {ProductsComponent} from './Products/products.component';
 import {ContactComponent} from './Contact/contact.component';
 import {AboutComponent} from './About/about.component';
-import {RouterModule} from '@angular/router';
+import {routing} from './app.routing';
 
 @NgModule({
   declarations: [
@@ -18,9 +16,8 @@ import {RouterModule} from '@angular/router';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    RouterModule
+    routing,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
