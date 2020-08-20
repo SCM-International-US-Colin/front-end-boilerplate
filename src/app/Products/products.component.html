@@ -213,7 +213,7 @@
       <div class="header-row-2">
         <div class="logo">
 
-          <div class="header-logo-text"><a routerLink="index.html">SCM</a></div>
+          <div class="header-logo-text"><a routerLink ="home">SCM</a></div>
 
         </div>
       </div>
@@ -233,9 +233,9 @@
           </div>
 
           <!-- Navigation -->
-          <div class="navbar-collapse collapse"><ul id="menu-main" class="nav navbar-nav"><li id="menu-item-148" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-item-148 dropdown"><a routerLink="../../index.html" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true">Home <span class="caret"></span></a>
+          <div class="navbar-collapse collapse"><ul id="menu-main" class="nav navbar-nav"><li id="menu-item-148" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-item-148 dropdown"><a routerLink ="home" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true">Home <span class="caret"></span></a>
             <ul role="menu" class=" dropdown-menu">
-              <li id="menu-item-214" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-214"><a routerLink="../About/about.component.html">About SCM</a></li>
+              <li id="menu-item-214" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-214"><a routerLink="about">About SCM</a></li>
 
             </ul>
             <li id="menu-item-148" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-item-148 dropdown"><a data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true">Product<span class="caret"></span></a>
@@ -247,7 +247,7 @@
               </ul>
 
 
-            <li id="menu-item-151" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-151"><a routerLink="../Contact/contact.component.html">Contact</a></li>
+            <li id="menu-item-151" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-151"><a routerLink="contact">Contact</a></li>
 
           </ul></div>                    <!-- /Navigation -->
         </nav>
@@ -521,9 +521,9 @@
         </div></div>
         <div class="col-md-20"><div id="pages-3" class="footer-row-2-widget widget widget_pages"><h3 class="widget-title">Home</h3>		<ul>
           <li class="page_item page-item-146"><a href="http://demo.lyrathemes.com/kale/about/">About Us</a></li>
-          <li class="page_item page-item-372"><a routerLink="product.component.html">Product</a></li>
+          <li class="page_item page-item-372"><a routerLink="products">Product</a></li>
 
-          <li class="page_item page-item-303"><a routerLink="../Contact/contact.component.html">Contact</a></li>
+          <li class="page_item page-item-303"><a routerLink="contact">Contact</a></li>
 
 
         </ul>
@@ -540,7 +540,7 @@
         </div></div>
 
         <div class="col-md-20"><div id="pages-4" class="footer-row-2-widget widget widget_pages"><h3 class="widget-title">Contact</h3>		<ul>
-          <li class="cat-item cat-item-1"><a routerLink="../Contact/contact.component.html">Contact</a>
+          <li class="cat-item cat-item-1"><a routerLink="contact">Contact</a>
 
         </ul>
         </div></div>
@@ -559,11 +559,11 @@
 
       <div class="footer-row-3-center"><div id="nav_menu-5" class="footer-row-3-widget widget widget_nav_menu">
         </div>http:/
-        <div class="footer-copyright">Copyright &copy; 2020 <a routerLink="../../index.html">SCM</a></div>
+        <div class="footer-copyright">Copyright &copy; 2020 <a [routerLink]="['/home']">SCM</a></div>
 
         <div class="footer-copyright">
           <ul class="credit">
-            <li><a routerLink="../../index.html">SCM</a>.</li>
+            <li><a [routerLink]="['/home']">SCM</a>.</li>
           </ul>
         </div>
 
